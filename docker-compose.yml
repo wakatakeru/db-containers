@@ -1,10 +1,10 @@
 version: '2.1'
 
 services:
-  rdb:
+  pdb:
     image: postgres
     ports:
       - 15432:5432
     volumes:
-      - ./data:/var/lib/postgresql/data
-      
+      - ./data/postgresql:/var/lib/postgresql/data
+
